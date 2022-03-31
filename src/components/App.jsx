@@ -6,18 +6,13 @@ import useLocalStorage from "Hooks/UseStorage";
 import { nanoid } from "nanoid";
  import 'react-toastify/dist/ReactToastify.css';
 
-
-
-
-
 const App = () => {
  
   const [contacts, setContacts] = useLocalStorage('contacts', [])
   const [filter, setFilter] = useState('');
 
   //===Метод меняeющий соcтояния поля Filter===//
-
-  const onChangeFilter = e => {
+   const onChangeFilter = e => {
     setFilter(e.target.value)
   };
  

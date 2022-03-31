@@ -2,8 +2,6 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import styles from './Form.module.css';
 
-
-
 const Form = ({onSubmit}) => { 
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
